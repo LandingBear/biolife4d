@@ -1,0 +1,316 @@
+/*
+Theme Name: BIOLIFE 4D
+Theme URI: https://biolife4d.com
+Author: Consociate
+Author URI: http://consociate.marketing/
+*/
+
+body { margin:0; padding:0; font-family: 'Open Sans', sans-serif }
+
+a, a:hover { text-decoration:none }
+
+.red { color:#ea002a }
+
+.cursor { cursor:pointer }
+
+h1 { font-size:32px; margin-bottom:40px; font-weight:600 }
+
+#who, #what, #signup { text-align:center; padding:75px 0; }
+
+.menu { text-align:center; font-size:18px; background-color: rgba(255,255,255,.25); width:100%; position:relative; top:0; left:0; z-index:16 }
+.menu a { color:#00539f; }
+.menu a:hover { color:#002a51 }
+
+.tabs { margin:0; padding:20px 0 }
+.tabs li { display:inline-block;  }
+.tabs li::after { 
+    content: " | ";
+	padding:0 10px;
+	color:#8ca1c8
+}
+li:last-child:after
+{
+  content: '';
+}
+
+header { margin-top:-20px; /* offsets SRT pixel gap */ width:100%; max-height:785px; position:relative }
+.slider { position:relative; top:-66px; left:0; z-index:15; }
+
+#who { position:relative; overflow:hidden }
+.helix-left { background:url(/images/bg-helix-left.jpg) 0 0 no-repeat; width:554px; height:671px; position:absolute; top:-38%; left:-5%; z-index:1 }
+.helix-right { background:url(/images/bg-helix-right.jpg) 0 0 no-repeat; width:554px; height:671px; position:absolute; top:-1%; right:-5%; z-index:1 }
+
+#what .fade-top-temp { background:url(/images/bg-whitefade.png); width:100%; height:99px; position:absolute; top:0; left:0; z-index:2; }
+
+.fade-top-temp { width:100%; height:100px; position:absolute; top:0; left:0; z-index:2;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+100&1+0,0+100 */
+	background: -moz-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.99) 1%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.99) 1%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), color-stop(0.01, rgba(255,255,255,0.99)), to(rgba(255,255,255,0)));
+	background: -o-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.99) 1%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.99) 1%, rgba(255,255,255,0) 100%); /* FF3.6-15 *//* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.fade-bottom-temp { width:100%; height:100px; position:absolute; bottom:0; left:0; z-index:2;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+100&0+0,1+100 */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.01) 1%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+#who .copy { font-size:24px; font-weight:300; position:relative; z-index:3; margin-bottom:40px }
+#who .red { margin-top:40px }
+#who a.arrow { background:url(/images/arrow-red.png) center top no-repeat; width:51px; height:26px; margin: 0 auto; display:block; position:relative; z-index:5; }
+	
+#what { position:relative; z-index:10; overflow:hidden; background-color:#c6c6d1 }
+#what  h1 { color:#00539f; margin-bottom:40px; }
+#what .copy { font-size:22px; font-weight:300 }
+#what p { margin-bottom:40px; }
+#what a.arrow { background:url(/images/arrow-blue.png) center top no-repeat; width:51px; height:26px; margin: 40px auto 0 auto; display:block }
+
+#signup { position:relative; z-index:10; overflow:hidden;  
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00539f+0,002570+100 */
+	background: rgb(0,83,159); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(0,83,159,1) 0%, rgba(0,37,112,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,83,159,1) 0%,rgba(0,37,112,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,83,159,1) 0%,rgba(0,37,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00539f', endColorstr='#002570',GradientType=0 ); /* IE6-9 */
+}
+#signup  h1 { color:#fff; margin-bottom:40px; }
+#signup .copy { font-size:22px; color:#0a54a5; }
+.gr-wrap { background:url(/images/bg-cellgrid.png) center center no-repeat; overflow:hidden; }
+
+#signup #mc_embed_signup { clear:left; width:75%; margin:0 auto; padding-left:3% }
+#signup #mc_embed_signup form { background:none; text-align:center; padding-left:0 }
+#signup #mc_embed_signup label { width:50%; margin:0 auto; font-size:16px; font-weight:400 }
+#signup #mc_embed_signup .mc-field-group { padding-bottom:0 }
+#signup #mc_embed_signup .indicates-required { text-align:center }
+#signup #mc_embed_signup input.email,
+	#signup #mc_embed_signup input#mce-FNAME,
+	#signup #mc_embed_signup input#mce-LNAME { width:50%; margin:10px auto 15px auto; background:none; border-radius:0; border:1px solid #92a0ba; color:#fff; opacity:1 }
+#signup #mc_embed_signup input#mc-embedded-subscribe { margin-right:4% }
+#signup #mc_embed_signup .button { width:auto; margin:0 auto; background:#fff; color:#000; text-transform:uppercase; letter-spacing:-.02em; padding:0 10px }
+
+#signup .copy .wpcf7-form { font-size:22px; color:#fff; margin-top:25px }
+.wpcf7-form label { width:100%; margin:0 auto; font-size:16px; font-weight:400; margin-top:15px }
+.wpcf7-form small { font-style:italic; color:#0a54a5; }
+.wpcf7-form input,
+	.wpcf7-form textarea.wpcf7-textarea { width:100%; margin:10px auto 15px auto; padding:10px; background:none; border-radius:0; border:1px solid #92a0ba; color:#9cadca; opacity:1 }
+.wpcf7-form input.wpcf7-submit { width:150px; background:#FFFFFF; color:#000000; font-size:18px }
+
+.legal { margin-top:30px; font-size:13px; opacity:.75; line-height:1.4 }
+
+#footer { padding:20px 0; font-size:18px; color:#fff; font-weight:300;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#888994+0,696a75+100 */
+	background: rgb(136,137,148); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(136,137,148,1) 0%, rgba(105,106,117,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(136,137,148,1) 0%,rgba(105,106,117,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(136,137,148,1) 0%,rgba(105,106,117,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888994', endColorstr='#696a75',GradientType=0 ); /* IE6-9 */
+ }
+.tagline { text-align:center; margin-top:10px  }
+.copyright { text-align:center; margin-top:35px }
+
+.social img.alignleft { float: none; margin: 5px 5px 0 0 } 
+
+footer .info { text-align:center; color:#fff; font-size:18px; margin:15px auto 0 auto }
+
+/* Contact */
+
+.form-final { padding-top:65px }
+.wpcf7-form-control-wrap { margin:0 auto; width:304px; height:78px } /* Centers captcha form */
+
+.wpcf7-form .wpcf7-response-output.wpcf7-validation-errors {
+    color: #D8000C;
+    background-color: #FFBABA;
+    border: 0;
+    padding: 10px;
+}
+.wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    border: 0;
+    padding: 10px;
+}
+div.wpcf7-mail-sent-ok:before,div.wpcf7-validation-errors:before {
+    font: 26px/30px dashicons;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+div.wpcf7-mail-sent-ok:before {
+    content: "\f147";
+}
+div.wpcf7-validation-errors:before {
+    content: "\f158";
+}
+
+/* BLOG */
+
+figcaption.wp-caption-text { text-align:center; font-weight: 500 }
+
+/* MEDIA Page */
+
+#media { text-align: center}
+#media h1 { text-align: center; margin-bottom: 20px; font-size: 24px}
+#media .subhead { color:#000; font-size:30px; font-weight:700 }
+#media .pic { margin:25px 0; box-shadow: none }
+#media .title { font-size:30px; font-weight:700; padding:0 0 10px 0; font-style: normal }
+#media .category { padding: 5px 0; background-color: #EEE; font-size:18px }
+#media .blurb { color:#000; font-size:18px; text-align:left; min-height:205px; margin:5px 0 25px 0; padding: 20px 0 10px 0 }
+#media .blurb.archive { padding: 20px 0 25px 0; border-bottom: 1px solid #ccc }
+
+#media .wpcf7-form input { color: #000 }
+
+/* INVESTORS */
+
+.swpm-join-us-link { display: none }
+
+.block1, .block2, .block3, .block4 { width: 100%; border-bottom: 1px solid #eee; margin-bottom: 100px; text-align: center}
+
+.logo-helix { padding: 35% 0; text-align: center }
+
+form#swpm-login-form { text-align:center }
+
+/* CARDIAC STATISTICS */
+
+ul.stats { margin-top: 25px }
+ul.stats li { margin-bottom:15px }
+
+logo.investors {  }
+
+/* IMAGES */
+
+#main .logo-helix img { width: 200px; height: auto }
+
+#footer img { width:85%; height:auto }
+
+figure.wp-caption.alignright,
+	img.alignright { float: right; margin: 5px 0 15px 20px }
+figure.wp-caption.alignleft,
+	img.alignleft { float: left; margin: 5px 20px 15px 0 }
+
+.aligncenter { margin: 0 auto}
+
+div.alignright { float: right; margin: 10px 0 auto 25px }
+
+/* ***********NEW*********** */
+
+#intro a.btn-video { margin: 30px auto }
+
+/* VIDEOS */
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* ICONS */
+
+a.btn-video { font-weight: 700; padding: 10px 15px; margin-bottom: 15px }
+a.btn-video .glyphicon { font-size:2em; top: 9px }
+.glyphicon.left { margin-right:10px }
+.glyphicon.right { margin-left:10px }
+
+/* BUTTON */
+
+a.btn-bigwhite, button.btn-bigwhite { background-color:#fff; padding:13px 20px; color:#000 !important; font-size:48px; font-weight:400 }
+a:hover.btn-bigwhite, button:hover.btn-bigwhite { opacity:.75; color:#000 }
+
+/*================  RESPONSIVE  ================*/
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+	nav.logo-stay .logo { display: block }
+	
+	.logo-helix { display: none }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	.tagline { text-align:center; margin-bottom:40px }
+	.copyright { text-align:center }
+	
+	#signup #mc_embed_signup {  width:100%; }
+	#signup #mc_embed_signup input.email,
+	#signup #mc_embed_signup input#mce-FNAME,
+	#signup #mc_embed_signup input#mce-LNAME { width:100%; }
+
+}
+
+/* Small Devices, 615px */
+@media only screen and (max-width : 615px) {
+	
+	.slider { margin-top:70px }
+	
+	#who { margin-top:-66px }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
+
+/* Landing Bear navigation rebuild */
+nav.navbar {
+	text-align: center;
+}
+
+nav.navbar ul.menu > li {
+	display: inline-block;
+}
+
+nav.navbar ul.menu > li > a:hover {
+	color: #ea002a;
+}
+
+nav.navbar ul.menu > li > a:focus {
+	text-decoration: none;
+}
+
+nav.navbar ul.menu > li > a {
+	color: #004b98;
+	padding: 5px 10px;
+    border-right: 1px solid #8ca1c8;
+}
+
+nav.navbar ul.menu > li.open > a {
+	color: #555;
+}
+
+nav.navbar ul.menu > li > .dropdown-toggle::after {
+	content: '⯆';
+	font-size: 11px;
+	padding-left: 3px;
+}
+
+nav.navbar ul.menu li:last-child a {
+	border-right: none;
+}
+
+.menu-primary-right-container, .menu-primary-left-container {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.navbar div.logo {
+	display: inline-block;
+}
+
+.navbar ul.menu {
+	display: inline-block;
+	background-color: transparent;
+}
